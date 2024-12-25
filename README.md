@@ -56,5 +56,30 @@ npm start
 ## compnents and work flow
 ## state & props
 
+### state => Data required for a component
 
-.
+
+<!-- var name= "Devtown" -->
+<!-- state = {
+           {
+
+               {
+
+               },
+               {
+
+               }
+           }
+} -->
+
+### Hooks => usestate(), setstate()
+
+import {useState} from "react";
+const [variable,func]= useState();
+const [count,setCount]= useState();
+
+const [num,setNum]= useState(0);
+num +=1;
+
+
+btn =>
