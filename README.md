@@ -1,85 +1,115 @@
-# Intro-react
+# React-Intro
 
-React Js
-.TS=Type scripts
-.js= java scripts
 
-SPA= single page appliction 
-single page application is we can access the things without refreshing the change or domain from or without navigate to anotherpage every element avilable in a sigle page ex - instagram,facebook these are made of React,angular,vue Js
+React JS
+.ts
+
+SPA (Single Page Appln) => Whole website contains a single HTML Page
 Components (Grp codes)
-Data Binding => Uni Directional , Flow of The Data
+Data Binding => Uni Directional, flow of the data
 Virtual DOM 
-                                                   home.jsx
+                                 home.jsx
 
-                           BannerSecton.jsx           Navbar.jsx              Section.jsx         Footer.jsx
-
-                                                   home.jsx           aboutUs.jsx
-The data flow this system is uni directional but viseversa is not possible
-
-Virtual DOM : 
-
-          I have updated <p>in <body>-------->Virtual DOM -----------> DOM ---------> HTML Manipulations reflected on web page
+        BannerSection.jsx           Navbar.jsx              section.jsx     footer.jsx
 
 
-SPA: 
+                                    homePage.jsx    aboutUs.jsx
+
+
+
+Virtual DOM:
+
+        I updated <p> in <body> -----------> Virtual DOM -------> DOM ------> HTML Manipulations reflected on web pg
+
+
+SPA:
 
 index.html
-        <html>
-            <body>
+    <html>
+        <body>
             <div id="root">
             </div>
-            </body>
-        </html>
+        </body>
+    </html>
+
 
 Components:
->> Class Components(Older Version)
->> Function Components(Newest Version)
+    >> Class Components (Older Version)
+    >> Function Components (Newest Edition)
 
 
 
-Redux (state management or local storage)
-Hooks (Lifecycle methods:what are the stuff done it's eye on  every activties )
+Redux (State Managment)
+Hooks (Lifecycle methods)
 
 
 npx => node package execution
-npm => node package manager
-to create use cmd
-npx create-react-app (ur-project-name)
+npx create-react-app project-name
 
-## run
-cd project name
-npm start 
-if show error use
-npm ajv
+## RUN:
+cd (projectName)
 npm start
 
-## compnents and work flow
-## state & props
 
-### state => Data required for a component
+### Components n workflow
+## State & Props
 
+### State => Data required for a component
 
-<!-- var name= "Devtown" -->
+<!-- var name= "DevTown" -->
 <!-- state = {
-           {
+    [
+        {
 
-               {
-
-               },
-               {
-
-               }
-           }
+        },
+        {
+            
+        }
+    ]
 } -->
 
-### Hooks => usestate(), setstate()
+### Hooks -> useState(), setState()
 
 import {useState} from "react";
-const [variable,func]= useState();
-const [count,setCount]= useState();
+const [variable, func] = useState();
+const [count, setCount] = useState();
 
-const [num,setNum]= useState(0);
-num +=1;
+const [num, setNum] = useState(5);
+num += 1;
 
 
-btn =>
+btn => 
+
+
+### Props (Where we will be passing data among the components) 
+## Parent Node -> Child Node
+## eg: App.js -> ClassComponent.jsx | FunctionComponent.jsx
+
+<FunctionComponent name="DevTown" age={20}>
+
+
+## Routing N Layouts in ReactJs
+Router >> Routes > Route
+/contact /aboutUs /signIn /signUp
+
+npm i react-router-dom
+
+WorkFlow wrt ur routes 
+>> index.js(Browser Router) >> app.js  >> diff routes
+
+
+## WorkFlow index.js >>  app.js >> pages
+
+
+//webpage
+>> /contact /aboutUs /signIn /signUp
+
+Layouts (HOC || High Order Component)
+/parentSignInAndUp
+>> Nav n Footer
+
+<!-- HOC's can add additional info/features to the existing components -->
+
+
+
+## React Life Cycle Methods
